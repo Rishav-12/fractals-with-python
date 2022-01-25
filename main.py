@@ -12,18 +12,19 @@ ANGLE = 30
 INIT_LENGTH = 70
 
 def draw_tree(levels, angle, length):
-  if levels == 0:
-    turtle.stamp()
-    return
-  turtle.right(angle)
-  turtle.forward(length)
-  draw_tree(levels - 1, angle, length*0.8) # each branch is 0.8 times the length of its parent
-  turtle.back(length)
-  turtle.left(2*angle)
-  turtle.forward(length)
-  draw_tree(levels - 1, angle, length*0.8) # each branch is 0.8 times the length of its parent
-  turtle.back(length)
-  turtle.right(angle)
+
+    if levels == 0:
+        turtle.stamp()
+        return
+    turtle.right(angle)
+    turtle.forward(length)
+    draw_tree(levels - 1, angle, length*0.8) # each branch is 0.8 times the length of its parent
+    turtle.back(length)
+    turtle.left(2*angle)
+    turtle.forward(length)
+    draw_tree(levels - 1, angle, length*0.8) # each branch is 0.8 times the length of its parent
+    turtle.back(length)
+    turtle.right(angle)
 
 turtle.speed(7)
 turtle.width(4)
