@@ -1,4 +1,4 @@
-# fractals_with_python
+# fractals with python
 Drawing a fractal tree with the help of Python's turtle module
 
 ### Description
